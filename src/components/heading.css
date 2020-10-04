@@ -1,0 +1,10 @@
+.Heading h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2.2vh;
+    margin-bottom: 2.2vh;
+}

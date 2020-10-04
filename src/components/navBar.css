@@ -1,0 +1,43 @@
+.NavigationBar {
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.NavigationBar#light {
+    background-color: white;
+}
+
+.NavigationBar#dark {
+    background-color: black;
+}
+
+.NavigationBar button {
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    width: 161px;
+    height: 38px;
+    margin: 13px 34px 14px 0px;
+    border: 0px;
+}
+
+.NavigationBar button#dark {
+    color: black;
+    background-color: white;
+}
+
+.NavigationBar button#light {
+    color: white;
+    background-color: black;
+}
+
+
+.NavigationBar img {
+    width: 46px;
+    height: auto;
+    margin: 12px 0px 7px 29px;
+}
+
