@@ -3,7 +3,7 @@ import "./heading.css"
 
 function Heading() {
   return (
-    <div className="Heading">
+    <div id="Heading">
       <h1>This is RiceApps.</h1>
     </div>
   );

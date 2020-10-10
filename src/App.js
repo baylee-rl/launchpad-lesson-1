@@ -3,17 +3,23 @@ import './App.css'
 import './fonts.css';
 import NavigationBar from './components/navBar.jsx';
 import Hero from './components/heroImage.jsx';
-import Content from './components/Content.jsx';
-import DarkModeContext from './DarkModeContext.jsx';
+import Heading from './components/heading';
+import DescriptionBoxes from './components/DescriptionBoxes';
+
 
 
 function App() {
+  const [DarkMode, setDarkMode] = useState(false);
+  const toggleDarkMode = () => {
+    setDarkMode(!DarkMode);
+  }
 
   return (
-    <div className="App">
-      <NavigationBar />
+    <div id="App" className={DarkMode ? "dark-mode" : "light-mode"}>
+      <NavigationBar toggleDarkMode={toggleDarkMode} DarkMode={DarkMode}/>
       <Hero />
-      <Content id={DarkMode ? "dark" : "light" }/>
+      <Heading />
+      <DescriptionBoxes />
     </div>
   );
 }

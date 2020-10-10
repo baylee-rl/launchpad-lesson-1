@@ -1,22 +1,23 @@
-.NavigationBar {
+#NavigationBar {
     height: 65px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
 
-.NavigationBar#light {
+#NavigationBar.light-bg {
     background-color: white;
 }
 
-.NavigationBar#dark {
+#NavigationBar.dark-bg {
     background-color: black;
 }
 
-.NavigationBar button {
+#NavigationBar button {
     border-radius: 10px;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 15px;
     text-align: center;
     width: 161px;
     height: 38px;
@@ -24,18 +25,18 @@
     border: 0px;
 }
 
-.NavigationBar button#dark {
+.dark-button {
     color: black;
     background-color: white;
 }
 
-.NavigationBar button#light {
+.light-button {
     color: white;
     background-color: black;
 }
 
 
-.NavigationBar img {
+#NavigationBar img {
     width: 46px;
     height: auto;
     margin: 12px 0px 7px 29px;

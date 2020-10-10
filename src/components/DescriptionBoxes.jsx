@@ -18,7 +18,7 @@ function DescriptionBoxes() {
         }
     ];
   return (
-    <div className="DescriptionBoxes">
+    <div id="DescriptionBoxes">
         {contentBoxes.map(contentBox => {
             let { title, description } = contentBox;
             return (<DescriptionBox title={title} description={description} />);
